@@ -10,151 +10,202 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="grid">
-        <header>
-            <div class="header-top">
-                <div class="header-top-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>magnify</title><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
-                    <input type="search" name="search" id="">
+    <div class="flex">
+        <div class="flex-sidebar">
+            <aside class="sidebar">
+                <div class="sidebar-logo">
+                    <img src="./Images/owl.svg" alt="icon-owl">
+                    <a href="Index.html">Dashboard</a>
                 </div>
-
-                <div class="header-top-data">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-outline</title><path d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z" /></svg>
+                <ul class="sidebar-options">
+                    <li class="sidebar-options-item">
+                        <img src="./Images/home.svg" alt="icon-home">
+                        <span>Home</span>
+                    </li>
+                    <li class="sidebar-options-item">
+                        <img src="./Images/account-circle.svg" alt="icon-account">
+                        <span>Profile</span>
+                    </li>
+                    <li class="sidebar-options-item">
+                        <img src="./Images/message-bulleted.svg" alt="icon-message">
+                        <span>Messages</span>
+                    </li>
+                    <li class="sidebar-options-item">
+                        <img src="./Images/clock-time-three.svg" alt="icon-clock">
+                        <span>History</span>
+                    </li>
+                    <li class="sidebar-options-item">
+                        <img src="./Images/note-multiple.svg" alt="icon-note">
+                        <span>Tasks</span>
+                    </li>
+                    <li class="sidebar-options-item">
+                        <img src="./Images/account-group.svg" alt="icon-people">
+                        <span>Communities</span>
+                    </li>
+                </ul>
+                <ul class="sidebar-others">
+                    <li class="sidebar-others-item">
+                        <img src="./Images/cog.svg" alt="icon-settings">
+                        <span>Settings</span>
+                    </li>
+                    <li class="sidebar-others-item">
+                        <img src="./Images/message-question.svg" alt="icon-question">
+                        <span>Support</span>
+                    </li>
+                    <li class="sidebar-others-item">
+                        <img src="./Images/shield-check.svg" alt="icon-shield">
+                        <span>Privacy</span>
+                    </li>
+                </ul>
+            </aside>
+        </div>     
+        <main>
+            <header>
+                <div class="header-search">
+                    <img src="./Images/magnify.svg" alt="searc-icon">
+                    <input type="search" name="search" id="search">
+                </div>
+                <div class="header-notify">
+                    <img src="./Images/bell-ring-outline.svg" alt="">
                     <img src="./Images/pexels-pixabay-86596.jpg" alt="user">
                     <span>Morgan Oakley</span>
                 </div>
-            </div>
-            <div class="header-bottom">
-                <div class="header-bottom-user">
+                <div class="header-user">
                     <img src="./Images/pexels-pixabay-86596.jpg" alt="user">
-                    <div class="bottom-user-text">
+                    <div class="header-user-text">
                         <span>Hi there,</span>
-                        <span>Morgan Oakley (@morgan)</span>
+                        <h1 class="header-user-text-title">Morgan Oakley (@morgan)</h1>
                     </div>
                 </div>
-                <div class="header-bottom-create">
+                <div class="header-options">
                     <button type="button">New</button>
                     <button type="button">Upload</button>
-                    <button type="button">Shaer</button>
+                    <button type="button">Share</button>
                 </div>
-            </div>
-        </header>
-        <aside class="sidebar">
-            <div class="sidebar-logo">
-                <img src="./Images/owl.svg" alt="icon-owl">
-                <a href="Index.html">Dashboard</a>
-            </div>
-            <ul class="sidebar-options">
-                <li class="sidebar-options-item">
-                    <img src="./Images/home.svg" alt="icon-home">
-                    <span>Home</span>
-                </li>
-                <li class="sidebar-options-item">
-                    <img src="./Images/account-circle.svg" alt="icon-account">
-                    <span>Profile</span>
-                </li>
-                <li class="sidebar-options-item">
-                    <img src="./Images/message-bulleted.svg" alt="icon-message">
-                    <span>Messages</span>
-                </li>
-                <li class="sidebar-options-item">
-                    <img src="./Images/clock-time-three.svg" alt="icon-clock">
-                    <span>History</span>
-                </li>
-                <li class="sidebar-options-item">
-                    <img src="./Images/note-multiple.svg" alt="icon-note">
-                    <span>Tasks</span>
-                </li>
-                <li class="sidebar-options-item">
-                    <img src="./Images/account-group.svg" alt="icon-people">
-                    <span>Communities</span>
-                </li>
-            </ul>
-            <ul class="sidebar-others">
-                <li class="sidebar-others-item">
-                    <img src="./Images/cog.svg" alt="icon-settings">
-                    <span>Settings</span>
-                </li>
-                <li class="sidebar-others-item">
-                    <img src="./Images/message-question.svg" alt="icon-question">
-                    <span>Support</span>
-                </li>
-                <li class="sidebar-others-item">
-                    <img src="./Images/shield-check.svg" alt="icon-shield">
-                    <span>Privacy</span>
-                </li>
-            </ul>
-        </aside>
-        <main>
-            <div class="projects">
-                <h1>Your Projects</h1>
-                <div>
-                    <article>
-                        <h2>Super Cool Project</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolor quas exercitationem culpa ipsam corrupti obcaecati esse eos animi consequatur!</p>
-                        <ul>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
+            </header>
+            <div class="main-grid">
+                <div class="grid-projects">
+                    <h2>Your Projects</h2>
+                    <article class="grid-projects-item">
+                        <div class="projects-item-line"></div>
+                        <h3>Super Cool Project</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolor quas exercitationem culpa ipsam corrupti</p>
+                        <ul class="projects-item-options">
+                            <li><img src="./Images/star-outline.svg" alt="star-icon"></li>
+                            <li><img src="./Images/eye-check-outline.svg" alt="eye-icon"></li>
+                            <li><img src="./Images/share-variant.svg" alt="share-icon"></li>
                         </ul>
                     </article>
-                    <article>
-                        <h2>Super Cool Project</h2>
+                    <article class="grid-projects-item">
+                        <div class="projects-item-line"></div>
+                        <h3>Super Cool Project</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolor quas exercitationem culpa ipsam corrupti obcaecati esse eos animi consequatur!</p>
-                        <ul>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
+                        <ul class="projects-item-options">
+                            <li><img src="./Images/star-outline.svg" alt="star-icon"></li>
+                            <li><img src="./Images/eye-check-outline.svg" alt="eye-icon"></li>
+                            <li><img src="./Images/share-variant.svg" alt="share-icon"></li>
                         </ul>
                     </article>
-                    <article>
-                        <h2>Super Cool Project</h2>
+                    <article class="grid-projects-item">
+                        <div class="projects-item-line"></div>
+                        <h3>Super Cool Project</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolor quas exercitationem culpa ipsam corrupti obcaecati esse eos animi consequatur!</p>
-                        <ul>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
+                        <ul class="projects-item-options">
+                            <li><img src="./Images/star-outline.svg" alt="star-icon"></li>
+                            <li><img src="./Images/eye-check-outline.svg" alt="eye-icon"></li>
+                            <li><img src="./Images/share-variant.svg" alt="share-icon"></li>
                         </ul>
-                    </article>
-                    <article>
-                        <h2>Super Cool Project</h2>
+                    </article>  
+                    <article class="grid-projects-item">
+                        <div class="projects-item-line"></div>
+                        <h3>Super Cool Project</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolor quas exercitationem culpa ipsam corrupti obcaecati esse eos animi consequatur!</p>
-                        <ul>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
+                        <ul class="projects-item-options">
+                            <li><img src="./Images/star-outline.svg" alt="star-icon"></li>
+                            <li><img src="./Images/eye-check-outline.svg" alt="eye-icon"></li>
+                            <li><img src="./Images/share-variant.svg" alt="share-icon"></li>
                         </ul>
-                    </article>
-                    <article>
-                        <h2>Super Cool Project</h2>
+                    </article>  
+                    <article class="grid-projects-item">
+                        <div class="projects-item-line"></div>
+                        <h3>Super Cool Project</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolor quas exercitationem culpa ipsam corrupti obcaecati esse eos animi consequatur!</p>
-                        <ul>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
+                        <ul class="projects-item-options">
+                            <li><img src="./Images/star-outline.svg" alt="star-icon"></li>
+                            <li><img src="./Images/eye-check-outline.svg" alt="eye-icon"></li>
+                            <li><img src="./Images/share-variant.svg" alt="share-icon"></li>
                         </ul>
-                    </article>
-                    <article>
-                        <h2>Super Cool Project</h2>
+                    </article>  
+                    <article class="grid-projects-item">
+                        <div class="projects-item-line"></div>
+                        <h3>Super Cool Project</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolor quas exercitationem culpa ipsam corrupti obcaecati esse eos animi consequatur!</p>
-                        <ul>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
-                            <li>                    <img src="./Images/message-question.svg" alt="icon-question"></li>
+                        <ul class="projects-item-options">
+                            <li><img src="./Images/star-outline.svg" alt="star-icon"></li>
+                            <li><img src="./Images/eye-check-outline.svg" alt="eye-icon"></li>
+                            <li><img src="./Images/share-variant.svg" alt="share-icon"></li>
                         </ul>
-                    </article>
+                    </article>  
+                </div>
+                <div class="grid-aside">
+                    <aside class="aside-announcements">
+                        <h2>Announcements</h2>
+                        <ul class="aside-announcements-list">
+                            <li>
+                                <h4>Site Maintenance</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, similique.</p>
+                            </li>
+                            <li>
+                                <h4>Community Share Day</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, similique.</p>
+                            </li>
+                            <li>
+                                <h4>Updated Privacy Policy</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, similique.</p>
+                            </li>
+                        </ul>    
+                    </aside>
+                    <aside class="aside-trending">
+                        <h2>Trending</h2>
+                        <ul class="aside-trending-list">
+                            <li>
+                                <img src="./Images/pexels-pixabay-86596.jpg" alt="user trending">
+                                <div>
+                                    <h5>@tegan</h5>
+                                    <span>World Peace Builder</span>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <img src="./Images/pexels-pixabay-86596.jpg" alt="user trending">
+                                <div>
+                                    <h5>@morgan</h5>
+                                    <span>Super Cool Project</span>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <img src="./Images/pexels-pixabay-86596.jpg" alt="user trending">
+                                <div>
+                                    <h5>@kendall</h5>
+                                    <span>Life Changing App</span>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <img src="./Images/pexels-pixabay-86596.jpg" alt="user trending">
+                                <div>
+                                    <h5>@alex</h5>
+                                    <span>No traffic Marker</span>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </aside>
                 </div>
 
             </div>
-            <aside class="announcemets">
-                <h3>Announcemets</h3>
-            </aside>
-            <aside class="trending">
-                <h3>Trending</h3>
-            </aside>
-        </main>
+        </main> 
     </div>
-
-    
 </body>
 </html>
